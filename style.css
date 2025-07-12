@@ -1,0 +1,73 @@
+body {
+  font-family: 'Traditional Arabic', Franklin Gothic Demi Cond;
+  padding: 30px 20px;
+  background-color: #f7f7f7;
+  direction: rtl;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.word-box {
+  background-color: #fff;
+  padding: 15px 10px;
+  border-radius: 8px;
+  border: 1px solid #FAD986;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 66px;
+  transition: transform 0.3s ease;
+}
+.word-box:hover {
+  transform: scale(1.05);
+}
+
+@keyframes redFade {
+  0%   { color: black; font-weight: 400; text-shadow: none; }
+  50%  { color: #ff0000; font-weight: 700; text-shadow: 0 0 8px #ff0000; }
+  100% { color: black; font-weight: 400; text-shadow: none; }
+}
+.animate span {
+  animation-name: redFade;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .word-box {
+    font-size: 32px;
+    padding: 12px 8px;
+  }
+}
+<head>
+  <!-- Diğer meta, title vs. -->
+  <style>
+    .kutu {
+      background-color: rgba(200, 200, 200, 0.3) !important; /* Hafif soldur */
+      transition: background-color 0.3s ease;
+    }
+    .vurgulu {
+      color: #d92323 !important; /* Parlak kırmızı */
+      text-shadow: 0 0 5px rgba(217, 35, 35, 0.7);
+      font-weight: bold;
+    }
+  </style>
+</head>
