@@ -22,11 +22,11 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 sabit sütun */
   grid-template-rows: repeat(7, auto);  /* 7 satır */
-  gap: 16px;
+  gap: 8px;
 }
 .word-box {
   background-color: #fff;
-  padding: 15px 8px;
+  padding: 17px 10px;
   border-radius: 8px;
   border: 1px solid #FAD986;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
