@@ -11,6 +11,10 @@ h1 {
   margin-bottom: 20px;
   font-size: 56px;
   text-align: center;
+  padding: 0 10px; /* kenarlardan biraz boşluk */
+  white-space: nowrap; /* Tek satırda kalmaya zorlar */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container {
   max-width: 900px;
@@ -64,8 +68,8 @@ h1 {
     grid-template-rows: repeat(7, auto);   /* 7 satırı koru */
   }
   .word-box {
-    font-size: 40px;   /* Bu boyut mobil için daha uygun */
-    padding: 10px 6px; /* Kutular mobilde daha yerleşik */
+    font-size: 28px;   /* Bu boyut mobil için daha uygun */
+    padding: 0,5px 6px; /* Kutular mobilde daha yerleşik */
   }
 }
   }
